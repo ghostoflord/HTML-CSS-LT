@@ -717,6 +717,143 @@ body::before {
   }
 }
 
+/* ========== Page hero (inner pages) ========== */
+.page-hero {
+  padding: 0 0 0.5rem;
+  border-bottom: 1px solid var(--line);
+  background: rgba(18, 24, 32, 0.45);
+}
+
+.page-hero .breadcrumb {
+  padding-top: 1.35rem;
+}
+
+.page-hero h1 {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  letter-spacing: -0.03em;
+  margin: 1rem 0 0.55rem;
+  line-height: 1.15;
+}
+
+.page-hero p {
+  color: var(--text-muted);
+  max-width: 40ch;
+  margin-bottom: 1.75rem;
+  font-size: 1.05rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ========== Catalog / Danh mục ========== */
+.catalog {
+  padding-top: 2rem;
+}
+
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-bottom: 2rem;
+}
+
+.filter-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1.05rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s var(--ease), border-color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.filter-chip:hover {
+  color: var(--text);
+  border-color: rgba(61, 214, 198, 0.4);
+}
+
+.catalog:has(#cat-all:checked) .filter-chip[for="cat-all"],
+.catalog:has(#cat-gaming:checked) .filter-chip[for="cat-gaming"],
+.catalog:has(#cat-office:checked) .filter-chip[for="cat-office"],
+.catalog:has(#cat-design:checked) .filter-chip[for="cat-design"] {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #06201c;
+}
+
+.catalog-panels {
+  display: grid;
+  gap: 3rem;
+}
+
+.cat-panel {
+  scroll-margin-top: calc(var(--header-h) + 1rem);
+}
+
+.catalog:has(#cat-gaming:checked) .cat-panel:not([data-cat="gaming"]),
+.catalog:has(#cat-office:checked) .cat-panel:not([data-cat="office"]),
+.catalog:has(#cat-design:checked) .cat-panel:not([data-cat="design"]) {
+  display: none;
+}
+
+.cat-banner {
+  position: relative;
+  min-height: 160px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--line);
+}
+
+.cat-banner img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cat-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(100deg, rgba(11, 16, 22, 0.92) 0%, rgba(11, 16, 22, 0.55) 55%, rgba(11, 16, 22, 0.35) 100%);
+}
+
+.cat-banner-text {
+  position: relative;
+  z-index: 1;
+  padding: 1.5rem 1.5rem;
+  max-width: 32rem;
+}
+
+.cat-banner-text h2 {
+  font-family: "Syne", sans-serif;
+  font-weight: 800;
+  font-size: clamp(1.4rem, 2.8vw, 1.85rem);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.35rem;
+}
+
+.cat-banner-text p {
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
 /* ========== Product detail ========== */
 .breadcrumb {
   display: flex;
