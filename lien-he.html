@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên hệ — NEXLAP</title>
+  <meta name="description" content="Liên hệ NEXLAP: tư vấn chọn laptop, đặt mua, bảo hành. Gọi hotline hoặc gửi form." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">NEX<span>LAP</span></a>
+
+      <input class="nav-check" type="checkbox" id="nav-toggle" hidden />
+      <label class="menu-toggle" for="nav-toggle" aria-label="Mở / đóng menu">
+        <span></span>
+      </label>
+
+      <nav class="nav" id="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="index.html#san-pham">Sản phẩm</a>
+        <a href="danh-muc.html">Danh mục</a>
+        <a href="lien-he.html" aria-current="page">Liên hệ</a>
+        <a class="nav-cta" href="index.html#san-pham">Xem máy</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Đường dẫn">
+          <a href="index.html">Trang chủ</a>
+          <span>/</span>
+          <span aria-current="page">Liên hệ</span>
+        </nav>
+        <h1>Liên hệ NEXLAP</h1>
+        <p>Tư vấn chọn máy, hỏi giá, đặt hàng — shop phản hồi trong giờ làm việc.</p>
+      </div>
+    </section>
+
+    <section class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-layout">
+        <div class="contact-aside">
+          <h2 id="contact-title">Thông tin shop</h2>
+          <p class="contact-intro">Anh cứ gọi hoặc gửi form bên cạnh. Nói rõ nhu cầu (học / game / đồ họa) để shop gợi ý máy vừa túi tiền.</p>
+
+          <ul class="contact-list">
+            <li>
+              <span class="contact-label">Hotline</span>
+              <a href="tel:0900000000">0900 000 000</a>
+            </li>
+            <li>
+              <span class="contact-label">Email</span>
+              <a href="mailto:hello@nexlap.vn">hello@nexlap.vn</a>
+            </li>
+            <li>
+              <span class="contact-label">Zalo</span>
+              <span>0900 000 000</span>
+            </li>
+            <li>
+              <span class="contact-label">Giờ làm việc</span>
+              <span>8:30 – 21:00 · Thứ 2 đến Chủ nhật</span>
+            </li>
+          </ul>
+
+          <div class="contact-stores">
+            <article class="store">
+              <h3>Chi nhánh Hà Nội</h3>
+              <p>123 Phố Huế, Hai Bà Trưng, Hà Nội</p>
+            </article>
+            <article class="store">
+              <h3>Chi nhánh TP.HCM</h3>
+              <p>456 Nguyễn Trãi, Quận 5, TP. Hồ Chí Minh</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="contact-form-wrap">
+          <h2>Gửi tin nhắn</h2>
+          <p class="contact-form-note">Form demo HTML/CSS — chưa nối server. Anh điền thử để xem giao diện.</p>
+
+          <form class="contact-form" action="#" method="get">
+            <div class="field">
+              <label for="name">Họ và tên</label>
+              <input type="text" id="name" name="name" placeholder="Nguyễn Văn A" required />
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="phone">Số điện thoại</label>
+                <input type="tel" id="phone" name="phone" placeholder="0900 000 000" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="ban@email.com" />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="need">Nhu cầu</label>
+              <select id="need" name="need">
+                <option value="">Chọn nhu cầu</option>
+                <option value="gaming">Laptop gaming</option>
+                <option value="office">Học / văn phòng</option>
+                <option value="design">Đồ họa / dựng video</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="message">Nội dung</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ví dụ: Em cần máy chơi game khoảng 20–25 triệu, thích màn 15–16 inch…" required></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Gửi liên hệ</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-map" aria-label="Khu vực cửa hàng">
+      <div class="container">
+        <div class="map-placeholder">
+          <p>Bản đồ cửa hàng</p>
+          <span>Hà Nội · TP.HCM — demo HTML/CSS (chưa nhúng Google Maps)</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="index.html">NEX<span>LAP</span></a>
+          <p>Cửa hàng laptop HTML/CSS — liên hệ nhanh để được tư vấn chọn máy.</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h4>Cửa hàng</h4>
+            <a href="index.html#san-pham">Sản phẩm</a>
+            <a href="danh-muc.html">Danh mục</a>
+            <a href="chi-tiet.html">Chi tiết mẫu</a>
+          </div>
+          <div>
+            <h4>Liên hệ</h4>
+            <a href="tel:0900000000">0900 000 000</a>
+            <a href="mailto:hello@nexlap.vn">hello@nexlap.vn</a>
+            <a href="lien-he.html">Hà Nội · TP.HCM</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 NEXLAP. Chỉ HTML &amp; CSS.</p>
+        <p>Dự án học / demo bán laptop.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
